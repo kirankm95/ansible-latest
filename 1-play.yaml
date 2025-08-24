@@ -1,0 +1,4 @@
+- name: first ansible playbook
+  hosts: web
+    - name: first task
+        ansible.builtin.ping      
