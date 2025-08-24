@@ -1,5 +1,5 @@
 - name: second ansible playbook for nginx installation
-  --become: true
+  become: yes
   hosts: web
   tasks:
     - name: first task
