@@ -1,13 +1,13 @@
 - name: first play
   become: yes
-  hosts: web
+  hosts: localhost
   tasks:
     - name: first task
       ansible.builtin.debug:
       msg: "this is first playbook"
 - name: second play
   become: yes
-  hosts: web
+  hosts: localhost
   tasks:
     - name: second task
       ansible.builtin.debug:
