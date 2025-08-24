@@ -1,0 +1,11 @@
+- name: second ansible playbook for nginx installation
+  hosts: web
+  tasks:
+    - name: first task
+      ansible.builtin.package:
+        name: nginx
+        state: present
+    - name: second task
+      ansible.builtin.service:
+        name: nginx
+        state: started
