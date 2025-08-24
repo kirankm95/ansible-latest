@@ -9,6 +9,6 @@
   become: yes
   hosts: web
   tasks:
-    - name: first task
+    - name: second task
       ansible.builtin.debug:
       msg: "this is second playbook"
