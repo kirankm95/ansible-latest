@@ -4,11 +4,11 @@
   tasks:
     - name: first task
       ansible.builtin.debug:
-      msg: "this is first playbook"
+        msg: "this is first playbook"
 - name: second play
   become: yes
   hosts: localhost
   tasks:
     - name: second task
       ansible.builtin.debug:
-      msg: "this is second playbook"
+        msg: "this is second playbook"
