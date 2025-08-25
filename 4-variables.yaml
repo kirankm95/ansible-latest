@@ -1,8 +1,15 @@
 - name: first play
   become: yes
   hosts: localhost
-  vars_files:
-  - variables.yaml
+  vars_prompt:
+  - name: PERSON
+    prompt: please enter person name
+    private: false
+  - name: SURNAME
+    prompt: please enter SURNAME
+    private: true
+  # vars_files:
+  # - variables.yaml
   vars:
     PERSON: kiran play
     SURNAME: uppu play
