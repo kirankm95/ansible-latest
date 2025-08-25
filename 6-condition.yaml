@@ -10,3 +10,8 @@
     - name: 222 key value pair22222
       ansible.builtin.debug: 
         msg: "{{user.rc}}"
+
+    - name: 222 key value pair22222345
+      ansible.builtin.user: 
+        user: roboshop
+        when: user.rc != 0
