@@ -9,4 +9,4 @@
 
     - name: key value pair
       ansible.builtin.debug: 
-        msg: user.rc
+        msg: "user.rc"
