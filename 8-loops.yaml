@@ -1,0 +1,12 @@
+- name: first play
+  become: yes
+  hosts: localhost
+  tasks:
+    - name: key value pair1
+      ansible.builtin.package:
+        name: "{{item}}"
+        status: present
+      loop:
+        - mysql
+        - git
+        - postfix
