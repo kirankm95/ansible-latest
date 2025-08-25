@@ -1,0 +1,25 @@
+- name: first play
+  become: yes
+  hosts: localhost
+  vars:
+    name: kiran
+    skills:
+    - linux
+    - vmware
+    experience:
+      linux: 9
+      vmware: 5
+    qualified: true
+  tasks:
+    - name: key value pair
+      ansible.builtin.debug:
+        msg: "key valule pair is : {{name}}"
+    - name: list
+      ansible.builtin.debug:
+        msg: "list is : {{skills}}"
+    - name: map
+      ansible.builtin.debug:
+        msg: "map is : {{experience}}"
+    - name: boolean
+      ansible.builtin.debug:
+        msg: "boolean is : {{qualified}}"
