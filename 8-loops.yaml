@@ -4,7 +4,7 @@
   tasks:
     - name: key value pair1
       ansible.builtin.package:
-        name: "{{item}}"
+        name: {{item}}
         status: present
       loop:
         - mysql
