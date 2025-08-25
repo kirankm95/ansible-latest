@@ -2,11 +2,11 @@
   become: yes
   hosts: localhost
   tasks:
-  - name: key value pair1
-    ansible.builtin.debug:
-    msg: "item is {{item}}"
-    loops:
-    - kiran
-    - kumar
-    - uppu
+    - name: key value pair1
+      ansible.builtin.debug:
+      msg: "item is {{item}}"
+      loops:
+        - kiran
+        - kumar
+        - uppu
       
