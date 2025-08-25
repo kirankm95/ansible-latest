@@ -1,0 +1,10 @@
+- name: first play
+  become: yes
+  hosts: localhost
+  vars:
+    PERSON: kiran
+    SURNAME: uppu
+  tasks:
+    - name: first task
+      ansible.builtin.debug:
+        msg: "this is first playbook and name is {{PERSON}} and SURNAME is {{SURNAME}}"
