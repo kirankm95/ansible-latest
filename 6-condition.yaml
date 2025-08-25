@@ -7,6 +7,6 @@
       register: user
       ignore_erros: true
 
-    - name: key value pair
+    - name: 222 key value pair22222
       ansible.builtin.debug: 
         msg: "{{user.rc}}"
