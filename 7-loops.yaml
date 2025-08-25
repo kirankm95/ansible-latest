@@ -4,7 +4,7 @@
   tasks:
     - name: key value pair1
       ansible.builtin.debug:
-      msg: "item is {{item}}"
+      msg: "mentioned one is: {{item}}"
       loop:
         - kiran
         - kumar
