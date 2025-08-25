@@ -5,7 +5,7 @@
     - name: key value pair1
       ansible.builtin.command: id roboshop
       register: user
-      ignore_erros: true
+      ignore_errors: true
 
     - name: 222 key value pair22222
       ansible.builtin.debug: 
