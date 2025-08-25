@@ -4,8 +4,8 @@
   tasks:
     - name: key value pair1
       ansible.builtin.package:
-        name: {{item}}
-        status: present
+        name: "{{item}}"
+        state: present
       loop:
         - mysql
         - git
