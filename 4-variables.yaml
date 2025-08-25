@@ -2,9 +2,12 @@
   become: yes
   hosts: localhost
   vars:
-    PERSON: kiran
+    PERSON: kiran play
     SURNAME: uppu
   tasks:
     - name: first task
+      vars:
+      PERSON: kiran tasks
+      SURNAME: uppu tasks
       ansible.builtin.debug:
         msg: "this is first playbook and name is {{PERSON}} and SURNAME is {{SURNAME}}"
