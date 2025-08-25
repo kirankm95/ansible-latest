@@ -2,7 +2,7 @@
   become: yes
   hosts: localhost
   tasks:
-    - name: key value pair
+    - name: key value pair1
       ansible.builtin.command: id roboshop
       register: user
       ignore_erros: true
