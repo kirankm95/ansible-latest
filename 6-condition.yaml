@@ -13,5 +13,5 @@
 
     - name: 222 key value pair22222345
       ansible.builtin.user: 
-        user: roboshop
+        name: roboshop
         when: user.rc != 0
