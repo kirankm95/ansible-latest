@@ -3,7 +3,7 @@
   hosts: localhost
   tasks:
     - name: key value pair
-      ansible.builtin.command: id -u roboshop
+      ansible.builtin.command: id roboshop
       register: user
 
     - name: key value pair
