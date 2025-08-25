@@ -7,7 +7,7 @@
   tasks:
     - name: first task
       vars:
-      PERSON: kiran tasks
-      SURNAME: uppu tasks
+        PERSON: kiran tasks
+        SURNAME: uppu tasks
       ansible.builtin.debug:
         msg: "this is first playbook and name is {{PERSON}} and SURNAME is {{SURNAME}}"
