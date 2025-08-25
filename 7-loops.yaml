@@ -5,7 +5,7 @@
     - name: key value pair1
       ansible.builtin.debug:
       msg: "item is {{item}}"
-      loops:
+      loop:
         - kiran
         - kumar
         - uppu
