@@ -1,0 +1,11 @@
+- name: first play
+  become: yes
+  hosts: localhost
+  tasks:
+    - name: key value pair
+      ansible.builtin.command: id -u roboshop
+      register: user
+
+    - name: key value pair
+      ansible.builtin.debug: 
+        msg: user.rc
