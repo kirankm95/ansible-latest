@@ -1,13 +1,15 @@
 - name: first play
   become: yes
   hosts: localhost
+  vars_files:
+  - variables.yaml
   vars:
     PERSON: kiran play
-    SURNAME: uppu
+    SURNAME: uppu play
   tasks:
     - name: first task
-      vars:
-        PERSON: kiran tasks
-        SURNAME: uppu tasks
+      # vars:
+      #   PERSON: kiran tasks
+      #   SURNAME: uppu tasks
       ansible.builtin.debug:
         msg: "this is first playbook and name is {{PERSON}} and SURNAME is {{SURNAME}}"
